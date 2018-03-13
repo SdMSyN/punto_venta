@@ -13,8 +13,10 @@ $store = $_POST['storeId'];
         //. "ORDER BY $tProduct.nombre ";
 $sqlGetProducts = "SELECT $tProduct.id, $tProduct.nombre "
         . "FROM $tProduct "
-        . "WHERE NOT EXISTS "
-        . "(SELECT )";
+        . "WHERE $tProduct.id NOT IN "
+        . "(SELECT $tStock.producto_id "
+        . "FROM $tStock "
+        . "WHERE $tStock.tienda_id = '$store' )";
 $resGetProducts = $con->query($sqlGetProducts);
 $optProducts = '<option></option>';
 if ($resGetProducts->num_rows > 0) {

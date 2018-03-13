@@ -78,12 +78,12 @@ else {
                     <form id="frm_filtro" method="post" action="" class="form-horizontal">
                         <input type="hidden" id="inputIDStore" name="inputIDStore" class="form-control">
                         <div class="form-group">
-                            <label class="col-sm-4 control-label" style="font-size: 12px; ">Busqueda</label>
+                            <!-- <label class="col-sm-4 control-label" style="font-size: 12px; ">Busqueda</label>
                             <div class="col-sm-8">
                                 <input type="text" id="inputQuery" name="inputQuery" class="form-control">
                             </div>
                             <button type="button" id="btnfiltrar" class="btn btn-success">Filtrar</button>
-                            <a href="javascript:;" id="btncancel" class="btn btn-default">Todos</a>
+                            <a href="javascript:;" id="btncancel" class="btn btn-default">Todos</a>-->
                         </div>
                     </form>
                 </div>
